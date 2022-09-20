@@ -1,3 +1,6 @@
+
+-- PROBLEM: https://jutge.org/problems/P93632_en/submissions/S001
+
 eql :: [Int] -> [Int] -> Bool
 -- Bool that tells wether two lists of integers are equal.
 eql a b = (length a == length b) && all (==True) (zipWith (==) a b)

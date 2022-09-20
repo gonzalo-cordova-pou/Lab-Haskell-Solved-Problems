@@ -1,0 +1,3 @@
+- [P77907: Haskell - Functions with numbers](https://jutge.org/problems/P77907_en)
+- [P25054: Haskell - Functions with lists](https://jutge.org/problems/P25054_en)
+- [P29040: Haskell - Sorting](https://jutge.org/problems/P29040_en)

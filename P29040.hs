@@ -1,12 +1,12 @@
 
--- PROBLEM: https://jutge.org/problems/P25054_en
+-- PROBLEM: https://jutge.org/problems/P29040_en
 
 insert :: [Int] -> Int -> [Int]
 -- given a sorted list and an element, correctly inserts the new element in the list
 insert [] x = [x]
 insert (y:ys) x
     | x <= y = x : y : ys
-    | otherwise = y : insert ys x
+    | otherwise = y : (insert ys x)
 
 isort :: [Int] -> [Int]
 -- implements insertion sort using the previous function
@@ -19,37 +19,24 @@ remove (x:xs) n
     | x == n = xs
     | otherwise = x:(remove xs n)
 
-myMaximum :: [Int] -> Int
-myMaximum [x] = x
-myMaximum (x:xs)
-    | x > max = x
-    | otherwise = max
-    where
-        max = myMaximum xs
-
 ssort :: [Int] -> [Int]
 -- implements selection sort using the previous function
-ssort [x] = [x]
-ssort l = min:(ssort(remove l min))
-    where
-        min = minimum l
+ssort [] = []
+ssort l = x : (ssort (remove l x)) where x = minimum l
 
-merge :: [Int] -> [Int] -> [Int]
+merge :: Ord a => [a] -> [a] -> [a]
 -- given two sorted lists, merges them to get a list with all the elements in sorted order
-merge [] [] = []
-merge [] [a] = [a]
-merge [a] [] = [a]
+merge [] ys = ys
+merge xs [] = xs
 merge (x:xs) (y:ys)
     | x <= y = x : merge xs (y:ys)
     | otherwise = y : merge (x:xs) ys
 
 
 half :: [Int] -> ([Int], [Int])
-half [] = ([], [])
-half [x] = ([x], [])
-half xs = ((take s xs), (drop s xs))
+half l = (take n l, drop n l)
     where
-        s = (length xs ) `div` 2
+        n = (div (length l) 2)
 
 
 msort :: [Int] -> [Int]
@@ -59,4 +46,16 @@ msort l =  merge (msort h1) (msort h2)
     where
         (h1, h2) = half l
 
+qsort :: [Int] -> [Int]
+qsort [] = []
+qsort (x:xs) = (qsort lower)++[x]++(qsort higher)
+    where
+        lower = [a | a <- xs, a <= x]
+        higher = [a | a <- xs, a > x]
 
+genQsort :: Ord a => [a] -> [a]
+genQsort [] = []
+genQsort (x:xs) = (genQsort lower)++[x]++(genQsort higher)
+    where
+        lower = [a | a <- xs, a <= x]
+        higher = [a | a <- xs, a > x]

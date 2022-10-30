@@ -12,11 +12,24 @@ The solutions that are proposed may NOT be optimal, you can propose new approach
 
 ## Problem List
 
-- [P77907: Haskell - Functions with numbers](https://jutge.org/problems/P77907_en)
-- [P25054: Haskell - Functions with lists](https://jutge.org/problems/P25054_en)
-- [P29040: Haskell - Sorting](https://jutge.org/problems/P29040_en)
+- [P77907: Haskell - Functions with numbers](https://jutge.org/problems/P77907_en). **[My solution](P77907.hs)**
+- [P25054: Haskell - Functions with lists](https://jutge.org/problems/P25054_en)**[My solution](P25054.hs)**
+- [P29040: Haskell - Sorting](https://jutge.org/problems/P29040_en). **[My solution](P29040.hs)**
 
-- [P93632: Haskell - Usage of higher-order functions (1)](https://jutge.org/problems/P93632_en)
-- [P31745: Haskell - Usage of higher order functions (2)](https://jutge.org/problems/P31745_en)
-- [P90677: Haskell - Definition of higher-order functions (1)](https://jutge.org/problems/P90677_en)
-- [P71775: Haskell - Definition of higher-order functions (2)](https://jutge.org/problems/P71775_en)
+- [P93632: Haskell - Usage of higher-order functions (1)](https://jutge.org/problems/P93632_en) **[My solution](P93632.hs)**
+- [P31745: Haskell - Usage of higher order functions (2)](https://jutge.org/problems/P31745_en). **[My solution](P31745.hs)**
+- [P90677: Haskell - Definition of higher-order functions (1)](https://jutge.org/problems/P90677_en). **[My solution](v.hs)**
+- [P71775: Haskell - Definition of higher-order functions (2)](https://jutge.org/problems/P71775_en). **[My solution](P71775.hs)**
+
+- [P93588: Haskell - Usage of comprehension lists](https://jutge.org/problems/P93588_en). **[My solution](P93588.hs)**
+- [P98957   Haskell - Infinite lists (1)](https://jutge.org/problems/P98957_en). **[My solution](P98957.hs)**
+
+- [P97301   Haskell - FizzBuzz](https://jutge.org/problems/P97301_en). **[My solution](P97301.hs)**
+- [P37072   Haskell - Binary tree](https://jutge.org/problems/P37072_en). **[My solution](P37072.hs)**
+- [P80618   Haskell - Queue (1)](https://jutge.org/problems/P80618_en). **[My solution](P80618.hs)**
+
+- [P70540   Haskell - Expressions](https://jutge.org/problems/P70540_en). **[My solution](P70540.hs)**
+- [P50086   Haskell - Cua (2)](https://jutge.org/problems/P50086_ca). **[My solution](P50086.hs)**
+
+- [P87974   Haskell - Hello / Bye](https://jutge.org/problems/P87974_en). **[My solution](P87974.hs)**
+- [P87082   Haskell - Body mass index](https://jutge.org/problems/P87082_en). **[My solution](P87082.hs)**

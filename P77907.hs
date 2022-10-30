@@ -32,12 +32,11 @@ slowFib 0 = 0
 slowFib 1 = 1
 slowFib n = slowFib(n-1) + slowFib(n-2)
 
-third_el :: (Int, Int, Int) -> Int
-third_el (x,y,z) = z
+compute :: (Int, Int, Int) -> Int -> Int
+compute (a, b, c) n
+    | a == n = c
+    | otherwise = compute (a+1, c, b+c)
 
-next_triplet :: (Int, Int, Int) -> Int -> (Int, Int, Int)
-next_triplet (x,y,z) n = if x < n  then next_triplet(x+1, z, y + z) n else (x, y, z)
-
-quickFib :: Int -> Int
+quickFib :: Int -> Int 
 quickFib 0 = 0
-quickFib n = third_el (next_triplet (1,0,1) n)
+quickFib n = compute (1,0,1) n

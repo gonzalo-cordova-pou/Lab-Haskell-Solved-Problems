@@ -42,7 +42,7 @@ The solutions that are proposed may NOT be optimal, you can propose new approach
 
 - [P87974   Haskell - Hello / Bye](https://jutge.org/problems/P87974_en). **[My solution](P87974.hs)**
 
-- [P87082   Haskell - Body mass index](https://jutge.org/problems/P87082_en). **[In progress...](P87082.hs)**
+- [P87082   Haskell - Body mass index](https://jutge.org/problems/P87082_en). **[My solution](P87082.hs)**
 
  ## More problems
  
